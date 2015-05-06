@@ -23,7 +23,8 @@ public class ControladorLogin extends Main{
     @FXML
     void enviar(ActionEvent event) {
     	if ((usuario.getText()).equals(contraseña.getText())) {
-    		estado.setText("Contraseña Correcta");    		
+    		estado.setText("Contraseña Correcta");
+
     	}
     	else if (!(usuario.getText()).equals(contraseña.getText())) {
     		estado.setText("Error, la contraseña y el nombre no coinciden");
