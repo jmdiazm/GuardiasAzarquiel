@@ -7,8 +7,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-
-public class ControladorLogin {
+public class ControladorLogin extends Main{
 
 	@FXML
     Button enviar;
@@ -23,21 +22,16 @@ public class ControladorLogin {
 
     @FXML
     void enviar(ActionEvent event) {
-    	estado.setText("correcto");
-    }/*
-    
-    private int factorial(int i) {
-    	return i*i;
+    	if ((usuario.getText()).equals(contraseña.getText())) {
+    		estado.setText("Contraseña Correcta");    		
+    	}
+    	else if (!(usuario.getText()).equals(contraseña.getText())) {
+    		estado.setText("Error, la contraseña y el nombre no coinciden");
+    	}
+    	else {
+    		estado.setText("Introduzca un nombre de usuario y contraseña");
+    	}
     }
-
-    @FXML
-    void initialize() {
-        assert resultado != null : "fx:id=\"resultado\" was not injected: check your FXML file 'VistaFactorial.fxml'.";
-        assert numero != null : "fx:id=\"numero\" was not injected: check your FXML file 'VistaFactorial.fxml'.";
-        assert calcular != null : "fx:id=\"calcular\" was not injected: check your FXML file 'VistaFactorial.fxml'.";
-
-        resultado.setText("Esperando...");
-        
-    }*/
+    
 }
 

@@ -7,7 +7,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 
 
-
 public class Login extends Application {
 	public static void main(String[] args) {
 		Application.launch(Login.class, (java.lang.String[]) null);
