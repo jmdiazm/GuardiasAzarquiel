@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="350.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="350.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="applicacion.vista.ControladorMain.java">
    <children>
       <GridPane prefHeight="351.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="0.0">
         <columnConstraints>
@@ -34,11 +34,11 @@
             </ImageView>
             <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
                <children>
-                  <Label prefHeight="67.0" prefWidth="254.0" text="Nombre Usuario">
+                  <Label fx:id="NombreUsuario" prefHeight="67.0" prefWidth="254.0" text="Nombre Usuario">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font></Label>
-                  <Label contentDisplay="CENTER" prefHeight="58.0" prefWidth="257.0" text="Departamento">
+                  <Label fx:id="Departamento" contentDisplay="CENTER" prefHeight="58.0" prefWidth="257.0" text="Departamento">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font></Label>
@@ -71,7 +71,7 @@
                   <VBox prefHeight="180.0" prefWidth="107.0">
                      <children>
                         <Label prefHeight="17.0" prefWidth="108.0" text="  Seleccione Aula" />
-                        <ListView prefHeight="163.0" prefWidth="26.0" />
+                        <ListView fx:id="SeleccionAula" prefHeight="163.0" prefWidth="26.0" />
                      </children>
                   </VBox>
                   <VBox prefHeight="180.0" prefWidth="120.0">
@@ -81,7 +81,7 @@
                               <Insets left="10.0" />
                            </VBox.margin>
                         </Label>
-                        <ListView prefHeight="60.0" prefWidth="110.0">
+                        <ListView fx:id="HoraAulaSeleccionada" prefHeight="60.0" prefWidth="110.0">
                            <VBox.margin>
                               <Insets left="10.0" />
                            </VBox.margin>
@@ -91,7 +91,7 @@
                               <Insets left="10.0" top="20.0" />
                            </VBox.margin>
                         </Label>
-                        <ListView prefHeight="20.0" prefWidth="110.0">
+                        <ListView fx:id="ProfesorAulaSeleccionada" prefHeight="20.0" prefWidth="110.0">
                            <VBox.margin>
                               <Insets left="10.0" />
                            </VBox.margin>
@@ -101,7 +101,7 @@
                               <Insets left="10.0" top="10.0" />
                            </VBox.margin>
                         </Label>
-                        <ListView prefHeight="20.0" prefWidth="120.0">
+                        <ListView fx:id="MateriaAulaSeleccionada" prefHeight="20.0" prefWidth="120.0">
                            <VBox.margin>
                               <Insets left="10.0" />
                            </VBox.margin>
@@ -137,7 +137,7 @@
                         <Insets left="10.0" />
                      </VBox.margin>
                   </Label>
-                  <ListView prefHeight="60.0" prefWidth="155.0">
+                  <ListView fx:id="SeleccionProfesor" prefHeight="60.0" prefWidth="155.0">
                      <VBox.margin>
                         <Insets left="10.0" />
                      </VBox.margin>
@@ -147,7 +147,7 @@
                         <Insets left="10.0" top="10.0" />
                      </VBox.margin>
                   </Label>
-                  <ListView prefHeight="80.0" prefWidth="155.0">
+                  <ListView fx:id="HorarioProfesorSeleccionado" prefHeight="80.0" prefWidth="155.0">
                      <VBox.margin>
                         <Insets left="10.0" />
                      </VBox.margin>
