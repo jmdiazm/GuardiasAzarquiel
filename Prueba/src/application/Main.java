@@ -14,6 +14,8 @@ public class Main extends Application {
 	
 	private ObservableList<Profesor> datosprofesor = FXCollections.observableArrayList();
 	
+	/*No funciona*/
+	
 	public Main(){
 		
 		datosprofesor.add(new Profesor("Juan Pablo", "Garcia Lopez"));
