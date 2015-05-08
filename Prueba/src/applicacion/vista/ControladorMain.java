@@ -36,7 +36,9 @@ public class ControladorMain {
 		
 		
 		//inicializan las variables
+		/*
 		@FXML
+		
 		private void initialize() {
 			
 			ProfesorSeleccionado.setCellFactory(cellData -> getValue().nombreProperty());			
@@ -55,7 +57,7 @@ public class ControladorMain {
 			}
 		}
 		
-		private void MuestraHorarioAula(Aula aula){
+		/*private void MuestraHorarioAula(Aula aula){
 			if (aula != null){
 				SeleccionAula.SetText(aula.getNombre());
 				HoraSeleccionAula.SetText(aula.getHora());
@@ -63,6 +65,6 @@ public class ControladorMain {
 				MateriaSeleccionAula.SetText(aula.getMateria());
 				
 			}
-		}
+		}*/
 	}
 }
