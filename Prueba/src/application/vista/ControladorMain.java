@@ -1,8 +1,8 @@
-package applicacion.vista;
+package application.vista;
 
-import applicacion.modelo.Aula;
-import applicacion.modelo.Profesor;
 import application.Main;
+import application.modelo.Aula;
+import application.modelo.Profesor;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
